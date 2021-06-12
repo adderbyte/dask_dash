@@ -1,0 +1,41 @@
+### To run the python scipt in the folder
+
+1) Install docker
+ 
+2) change directory to the this folder 
+
+## run the docker file using the command below
+3) docker build -t trudisplay .
+
+
+### after installation you can launch the script through docker image as below
+4) docker run -p 8050:8050 trudisplay
+
+
+
+
+#########################################################
+
+## Extra : there are two visualizations script
+##########################################################
+a) displayAll.py 
+b) display.py
+
+
+By default it runs displayAll.py. To view the second viz:
+
+
+Change this line in the docker file
+
+
+CMD [ "python", "./displayAll.py" ]
+
+
+by changing the "./displayAll.py" to "./display.py" and run the build command again:
+
+docker build -t trudisplay .
+
+then launch  image :
+
+docker run -p 8050:8050 trudisplay
+
