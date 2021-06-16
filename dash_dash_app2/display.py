@@ -3,7 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_table
-import pandas as pd
+import modin.pandas as pd
 
 data_url = 'https://raw.githubusercontent.com/plotly/datasets/master/2014_usa_states.csv'
 df = pd.read_csv("displaydata.csv",index_col=[0])

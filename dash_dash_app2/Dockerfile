@@ -26,7 +26,7 @@ ADD displayAll.py /work/displayAll.py
 
 
 ## change it to display.py to run secind script
-CMD [ "python", "./displayAll.py" ]
+CMD [ "python", "./display.py" ]
 
 
 # Declare port 8888
