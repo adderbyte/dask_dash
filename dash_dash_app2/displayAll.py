@@ -23,12 +23,15 @@ def main():
         'text': '#7FDBFF'
     }
 
-    app.layout = html.Div(
+    app.layout = html.Div(style={
+                'background-color': '#302f2f'},
         className="row",
         children=[
-            html.H1("Users Interactive Plot", style={
+            html.H1("TRUEFEEDBACKCHAIN ANALYTICS PLATFORM", style={
                 'textAlign': 'center',
-                'color': colors['background']
+                'color': '#ffc72e',
+                'font-weight': 1000,
+                'background-color': '#302f2f'
             }),
             html.Div(
                 dash_table.DataTable(
@@ -42,10 +45,10 @@ def main():
 
                     filter_action='custom',
                     filter_query='',
-                    style_cell=dict(textAlign='center', font_family = "cursive",font_size= '16px'),
+                    style_cell=dict(textAlign='center', font_family = "Helvetica",font_size= '16px'),
                     style_header=dict(backgroundColor="#ff9233",font_family='sans-serif',
                     font_size= '20px'),
-                    style_data=dict(backgroundColor="#ffbb00"),
+                    style_data=dict(backgroundColor="#ffc72e"),
 
                     sort_action='custom',
                     sort_mode='multi',
