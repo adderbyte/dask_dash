@@ -19,7 +19,7 @@ def main():
     PAGE_SIZE = 5
 
     colors = {
-        'background': '#111111',
+        'background': '#302f2f',
         'text': '#7FDBFF'
     }
 
@@ -43,9 +43,9 @@ def main():
                     filter_action='custom',
                     filter_query='',
                     style_cell=dict(textAlign='center', font_family = "cursive",font_size= '16px'),
-                    style_header=dict(backgroundColor="#97D987",font_family='sans-serif',
+                    style_header=dict(backgroundColor="#ff9233",font_family='sans-serif',
                     font_size= '20px'),
-                    style_data=dict(backgroundColor="#EBF9D7"),
+                    style_data=dict(backgroundColor="#ffbb00"),
 
                     sort_action='custom',
                     sort_mode='multi',
@@ -147,7 +147,7 @@ def main():
                                 "x": dff["countryNames"],
                                 "y": dff[column] if column in dff else [],
                                 "type": "bar",
-                                "marker": {"color": "#0074D9"},
+                                "marker": {"color": "#ffbb00"},
                                 "color":dff["male"],
                                 'line_color':'red',#dict(color='purple')
                                 #"name": dff["countryNames"]
@@ -157,6 +157,7 @@ def main():
                             "xaxis": {"automargin": True},
                             "yaxis": {"automargin": True},
                             "height": 250,
+                            "plot_bgcolor":colors['background'],
                             "margin": {"t": 30, "l": 10, "r": 30},
                             'title': column + " plot per country"
                             #"color":"female"
