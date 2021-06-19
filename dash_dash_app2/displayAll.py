@@ -4,10 +4,12 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_table
 import plotly.express as px
-
+from distributed import Client, LocalCluster
 
 def main():
     import modin.pandas as pd
+    cluster = LocalCluster()
+    client = Client(cluster)
     app = dash.Dash(__name__)
 
 

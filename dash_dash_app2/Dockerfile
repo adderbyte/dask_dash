@@ -24,7 +24,7 @@ ADD displaydata.csv  /work/displaydata.csv
 ADD display.py /work/display.py 
 ADD displayAll.py /work/displayAll.py 
 ADD assets/GUI.css /work/assets/GUI.css
-
+ADD loader.py /work/loader.py 
 
 ## change it to display.py to run secind script
 CMD [ "python", "./displayAll.py" ]

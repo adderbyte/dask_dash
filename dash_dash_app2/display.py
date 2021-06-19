@@ -7,7 +7,6 @@ import dash_table
 if __name__ == '__main__':
     import modin.pandas as pd
     #import multiprocessing.popen_spawn_win32
-    import modin.pandas as pd
     data_url = 'https://raw.githubusercontent.com/plotly/datasets/master/2014_usa_states.csv'
     df = pd.read_csv("displaydata.csv",index_col=[0])
     #df.columns = ['Countries','Gender','Age group','Size Count']
