@@ -8,6 +8,7 @@ from distributed import Client, LocalCluster
 
 def main():
     import modin.pandas as pd
+    # Dask Local Cluster
     cluster = LocalCluster()
     client = Client(cluster)
     app = dash.Dash(__name__)
